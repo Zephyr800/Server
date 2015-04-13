@@ -7,7 +7,7 @@
 #include "../common/string_util.h"
 
 extern volatile bool ZoneLoaded;
-
+// Note from Natedog
 // This constructor is used during the bot create command
 Bot::Bot(NPCType npcTypeData, Client* botOwner) : NPC(&npcTypeData, nullptr, glm::vec4(), 0, false), rest_timer(1) {
 	if(botOwner) {
